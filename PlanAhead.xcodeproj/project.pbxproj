@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B32477C12CA0ADE400632F18 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32477C02CA0ADE400632F18 /* TaskView.swift */; };
 		B3531D352C9F9D5A00F43F0E /* PlanAheadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3531D342C9F9D5A00F43F0E /* PlanAheadApp.swift */; };
 		B3531D372C9F9D5A00F43F0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3531D362C9F9D5A00F43F0E /* ContentView.swift */; };
 		B3531D392C9F9D5C00F43F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3531D382C9F9D5C00F43F0E /* Assets.xcassets */; };
 		B3531D3C2C9F9D5C00F43F0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3531D3B2C9F9D5C00F43F0E /* Preview Assets.xcassets */; };
+		B3531D432C9F9DA600F43F0E /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3531D422C9F9DA600F43F0E /* DateExtensions.swift */; };
+		B3531D452C9F9DDD00F43F0E /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3531D442C9F9DDD00F43F0E /* +View.swift */; };
+		B3531D472C9F9E0200F43F0E /* OffsetKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3531D462C9F9E0200F43F0E /* OffsetKey.swift */; };
+		B3531D492C9F9E1200F43F0E /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3531D482C9F9E1200F43F0E /* Task.swift */; };
+		B3531D4B2C9F9E2600F43F0E /* TaskItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3531D4A2C9F9E2600F43F0E /* TaskItem.swift */; };
+		B3531D4D2CA051E500F43F0E /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3531D4C2CA051E500F43F0E /* NewTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B32477C02CA0ADE400632F18 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
 		B3531D312C9F9D5A00F43F0E /* PlanAhead.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanAhead.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3531D342C9F9D5A00F43F0E /* PlanAheadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanAheadApp.swift; sourceTree = "<group>"; };
 		B3531D362C9F9D5A00F43F0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3531D382C9F9D5C00F43F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3531D3B2C9F9D5C00F43F0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B3531D422C9F9DA600F43F0E /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		B3531D442C9F9DDD00F43F0E /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "+View.swift"; path = "../Other/+View.swift"; sourceTree = "<group>"; };
+		B3531D462C9F9E0200F43F0E /* OffsetKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetKey.swift; sourceTree = "<group>"; };
+		B3531D482C9F9E1200F43F0E /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Task.swift; path = ../Task.swift; sourceTree = "<group>"; };
+		B3531D4A2C9F9E2600F43F0E /* TaskItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItem.swift; sourceTree = "<group>"; };
+		B3531D4C2CA051E500F43F0E /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B32477BE2CA0AC8E00632F18 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3531D422C9F9DA600F43F0E /* DateExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B32477BF2CA0ACA400632F18 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				B3531D462C9F9E0200F43F0E /* OffsetKey.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		B3531D282C9F9D5A00F43F0E = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +81,11 @@
 		B3531D332C9F9D5A00F43F0E /* PlanAhead */ = {
 			isa = PBXGroup;
 			children = (
+				B32477BF2CA0ACA400632F18 /* Other */,
+				B32477BE2CA0AC8E00632F18 /* Extensions */,
+				B3531D4F2CA0901E00F43F0E /* Task */,
+				B3531D4E2CA07E1300F43F0E /* Model */,
 				B3531D342C9F9D5A00F43F0E /* PlanAheadApp.swift */,
-				B3531D362C9F9D5A00F43F0E /* ContentView.swift */,
 				B3531D382C9F9D5C00F43F0E /* Assets.xcassets */,
 				B3531D3A2C9F9D5C00F43F0E /* Preview Content */,
 			);
@@ -65,6 +98,26 @@
 				B3531D3B2C9F9D5C00F43F0E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3531D4E2CA07E1300F43F0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3531D482C9F9E1200F43F0E /* Task.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3531D4F2CA0901E00F43F0E /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				B3531D442C9F9DDD00F43F0E /* +View.swift */,
+				B3531D362C9F9D5A00F43F0E /* ContentView.swift */,
+				B3531D4C2CA051E500F43F0E /* NewTask.swift */,
+				B3531D4A2C9F9E2600F43F0E /* TaskItem.swift */,
+				B32477C02CA0ADE400632F18 /* TaskView.swift */,
+			);
+			path = Task;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3531D452C9F9DDD00F43F0E /* +View.swift in Sources */,
+				B3531D472C9F9E0200F43F0E /* OffsetKey.swift in Sources */,
+				B32477C12CA0ADE400632F18 /* TaskView.swift in Sources */,
 				B3531D372C9F9D5A00F43F0E /* ContentView.swift in Sources */,
 				B3531D352C9F9D5A00F43F0E /* PlanAheadApp.swift in Sources */,
+				B3531D492C9F9E1200F43F0E /* Task.swift in Sources */,
+				B3531D4D2CA051E500F43F0E /* NewTask.swift in Sources */,
+				B3531D432C9F9DA600F43F0E /* DateExtensions.swift in Sources */,
+				B3531D4B2C9F9E2600F43F0E /* TaskItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
